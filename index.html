@@ -7,7 +7,17 @@
     <title>Welcome - Goofy Games</title>
     <link rel="stylesheet" href="style home.css">
 
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollTrigger = document.getElementById('ScrollToAboutMeTrigger');
+            var targetElement = document.getElementById('TargetElementAboutMe');
+        
+            scrollTrigger.addEventListener('click', function() {
+                // Scroll to the target element
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        </script>
 
 
 
@@ -20,7 +30,7 @@
         <span class="menubtns">Home</span>
         <span class="menubtn" onclick="location.href='games.html'">Games</span>
         <span class="menubtn">Software</span>
-        <span class="menubtn">About Me</span>
+        <span class="menubtn" id="ScrollToAboutMeTrigger">About Me</span>
     </div>
     </div>
     <img class="gglogo" src="media/GGlogo222.png" alt="" width="40vw" style="padding: -2px 22px;">
@@ -49,13 +59,15 @@
     <img class="arrow_d" src="media/down_arrow.png" alt="" width="40vw" style="padding: -2px 22px;">
   
     <br><br><br><br>
-    <h1>What do i use for my Games/Apps? (so far...)</h1>
+    <h1 id="TargetElementAboutMe">What do i use for my Games/Apps? (so far...)</h1>
     <br><br><br><br><br><br><br><br>
     <img class="about_me_mainstyle"  src="media/am_ue.png" alt="" width="40vw" style="padding: -2px 22px;">
     <br><br><br><br><br><br><br><br><br>
     <img class="about_me_mainstyle"  src="media/am_cf.png" alt="" width="40vw" style="padding: -2px 22px;">
     <br><br><br><br><br><br><br><br><br>
     <img class="about_me_mainstyle"  src="media/am_ad.png" alt="" width="40vw" style="padding: -2px 22px;">
+    <br><br><br><br><br><br><br><br><br>
+    <img class="about_me_mainstyle"  src="media/am_vs.png" alt="" width="40vw" style="padding: -2px 22px;">
 
 
 
