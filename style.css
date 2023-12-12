@@ -48,3 +48,10 @@ h1 {
     text-align: center;
     padding: 110px 7px;
 }
+
+img {
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;	
+}
