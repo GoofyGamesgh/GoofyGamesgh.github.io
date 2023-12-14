@@ -77,3 +77,8 @@
       font-size: calc(3.375rem * var(--smaller));
     }
   }
+
+  img {
+    width: 50vw;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
