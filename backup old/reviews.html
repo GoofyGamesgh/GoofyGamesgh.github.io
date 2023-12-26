@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MX9</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#header').load('inject_html/header.html');
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#footer').load('inject_html/footer.html');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h2 class="impttitle">Reviews</h2>
+
+    <div class="boxcontainer">
+        <div>
+        <div class="itemboxcontainer">JBL PartyBox 310
+        <img class="boximage" src="media/rev_images/JBL_Partybox_310.webp" alt="">
+        <button class="seerevbutton">See Review</button></div>
+        </div>
+        
+        <div>
+            <div class="itemboxcontainer">Hercules Impulse 500
+            <img class="boximage" src="media/rev_images/Hercules_Impulse_500.png" alt="">
+            <button class="seerevbutton">See Review</button></div>
+        </div>
+        
+        <div>
+            <div class="itemboxcontainer">JBL Extreme 3
+            <img class="boximage" src="media/rev_images/JBL_XTREME_3.webp" alt="">
+            <button class="seerevbutton" onclick="window.location.href='reviews/JBL_XTREME3_rev.html';">See Review</button></div>
+        </div>
+       
+        
+</div>
+
+    
+
+
+    
+</div>
+
+
+
+
+    <div id="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - MX9</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#header').load('inject_html/header.html');
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#footer').load('inject_html/footer.html');
+        });
+
+    </script>
+
+    
+
+</head>
+
+<body class="bodybg">
+    <div id="header"></div>
+
+
+    <style>
+        .mcview {
+            width: 99%;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            height: 800px;
+        }
+
+        .dark-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border-radius: 5px;
+
+            /* Center the button horizontally */
+            margin: 0 auto;
+            display: block;
+            width: 130px;
+            height: 60px;
+            background-color: rgb(51, 51, 51);
+            margin-bottom: 100px;
+            font-size: 29px;
+            margin-bottom: 30px;
+            font-family: VT323;
+        }
+
+        .dark-button:hover {
+            background-color: #9c9c9c;
+            color: black;
+            margin-bottom: 23px;
+            width: 200px;
+            height: 67px;
+            font-size: 34px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 24px rgba(255, 255, 255, 0.5);
+        }
+
+        .dark-button:active {
+            background-color: #eeeeee;
+            transform: translateY(4px);
+
+        }
+
+        .containermenu {
+            display: flex;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            color: white;
+
+        }
+
+        header {
+            font-family: VT323;
+
+        }
+
+        nav a {
+            font-size: 26px;
+        }
+
+        .infodiv {
+            border-style: solid;
+            border-width: thin;
+            border-color: #000000;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 440px;
+        }
+
+        .infodivsep {
+            text-align: center;
+            color: rgb(190, 182, 190);
+        }
+
+        .newsimg {
+            width: 50%;
+            margin-bottom: 100px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            margin-bottom: 40px;
+
+
+        }
+
+        .boxcontainerP {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .itemboxcontainerP {
+            width: 250px;
+            height: 280px;
+            background-color: #333333;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 25px;
+            margin: 20px;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        .itemboxcontainerP:hover {
+            width: 260px;
+            height: 320px;
+            border-radius: 10px;
+            background-color: #464646;
+            font-size: 29px;
+            padding: 10px;
+            margin-bottom: 20px;
+
+
+
+
+            .boximage {
+                width: 240px;
+                border-radius: 10px;
+
+            }
+
+            .ptext {
+                font-size: 38px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: white;
+                font-family: VT323;
+            }
+
+
+
+        }
+
+
+
+        .boximage {
+            width: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .ptext {
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+            font-family: VT323;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .utctimehilight {
+            color: #00ff00;
+            text-shadow: 0 0 5px #00ff00;
+        }
+
+  
+    </style>
+
+
+
+
+    <img class="mtt" src="../media/m09.eu high res 2.png" alt="" style="margin-top: 55px; margin-bottom: 190px;">
+
+
+    <div class="containermenu">
+        <button class="dark-button" onclick="location.href='#info'" type="button">Info</button>
+        <button class="dark-button" onclick="location.href='#news'" type="button">News</button>
+        <button class="dark-button" onclick="location.href='#players'" type="button">Players</button>
+        <button class="dark-button" onclick="location.href='#map'" type="button">Map</button>
+
+    </div>
+<hr>
+    <h1 id="info">Info</h1>
+
+    <div class="infodiv">
+        <h1 style="background-color: #9c9c9c; border-radius: 20px;">M09.eu</h1>
+        <div class="infodivsep">
+            <h2>Max. Players: 4</h2>
+        </div>
+        <div class="infodivsep">
+            <h2>Ram: 7gb</h2>
+        </div>
+        <div class="infodivsep">
+            <h2>Whitelist: yes</h2>
+        </div>
+        <div class="infodivsep">
+            <h2>Minecraft-Version: 1.19.2</h2>
+        </div>
+        <div class="infodivsep">
+            <h2>Mods: no</h2>
+        </div>
+
+
+    </div>
+<hr>
+    <h1 id="news">News</h1>
+
+    <img class="newsimg" src="media/m09.eumc_news/m09.eu_news_17.12.2023_1_Zeichenfläche 1.png" alt="">
+    <hr>
+    <h1 id="players">Players</h1>
+
+
+    <div class="boxcontainerP">
+        <div>
+            <div class="itemboxcontainerP">
+                <h1 class="ptext">M09_</h1>
+                <img class="boximage" src="media/mc/m09_.png" alt="">
+
+            </div>
+        </div>
+
+        <div>
+            <div class="itemboxcontainerP">
+                <h1 class="ptext">Megliox</h1>
+                <img class="boximage" src="media/mc/wood.png" alt="">
+
+            </div>
+        </div>
+
+        <div>
+            <div class="itemboxcontainerP">
+                <h1 class="ptext">JJ_0706</h1>
+                <img class="boximage" src="media/mc/jj_0706.png" alt="">
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+<hr>
+    <iframe class="mcview" id="map" src="https://minecraft.nitrado.net/map/14227038"></iframe>
+
+    <h1>Rendering new Map in</h1>
+
+    <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="4706183" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="d" href="//www.tickcounter.com/">d</a>
+    <div id="footer"></div>
+</body>
+
+</html>
