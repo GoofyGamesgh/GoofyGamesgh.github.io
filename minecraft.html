@@ -24,12 +24,15 @@
 
     </script>
 
-    
+
 
 </head>
 
 <body class="bodybg">
     <div id="header"></div>
+
+    <span id="top"></span>
+    
 
 
     <style>
@@ -187,8 +190,6 @@
 
         }
 
-
-
         .boximage {
             width: 200px;
             transition: all 0.3s ease-in-out;
@@ -208,7 +209,19 @@
             text-shadow: 0 0 5px #00ff00;
         }
 
-  
+        a.top {
+            margin: 0 auto; /* Add this line to center the button horizontally */
+            background-color: #111;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        a.top:hover {
+            background-color: #333;
+        }
+    
     </style>
 
 
@@ -224,8 +237,8 @@
         <button class="dark-button" onclick="location.href='#map'" type="button">Map</button>
 
     </div>
-<hr>
-    <h1 id="info">Info</h1>
+    <hr id="info">
+    <h1>Info</h1>
 
     <div class="infodiv">
         <h1 style="background-color: #9c9c9c; border-radius: 20px;">M09.eu</h1>
@@ -247,12 +260,12 @@
 
 
     </div>
-<hr>
-    <h1 id="news">News</h1>
+    <hr id="news">
+    <h1>News</h1>
 
     <img class="newsimg" src="media/m09.eumc_news/m09.eu_news_17.12.2023_1_Zeichenfläche 1.png" alt="">
-    <hr>
-    <h1 id="players">Players</h1>
+    <hr id="players">
+    <h1>Players</h1>
 
 
     <div class="boxcontainerP">
@@ -288,13 +301,20 @@
 
 
     </div>
-<hr>
-    <iframe class="mcview" id="map" src="https://minecraft.nitrado.net/map/14227038"></iframe>
+    <hr id="map">
+    <iframe class="mcview" src="https://minecraft.nitrado.net/map/14227038"></iframe>
 
     <h1>Rendering new Map in</h1>
 
-    <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="4706183" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="d" href="//www.tickcounter.com/">d</a>
+    <script>(function (d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+    <a data-type="countdown" data-id="4706183" class="tickcounter"
+        style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;"
+        title="d" href="//www.tickcounter.com/">d</a>
     <div id="footer"></div>
+
+    <a class="top" style="position: fixed; bottom: 10px; left: 10px;" href="#top">scroll to top</a>
+
 </body>
+
 
 </html>
